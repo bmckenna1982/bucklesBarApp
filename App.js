@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
 import SearchBar from './app/components/SearchBar';
@@ -12,8 +12,21 @@ import liquors from './categories';
 import Categories from './app/components/Categories';
 import BottlesList from './app/components/BottlesList';
 import BottleCard from './app/components/BottleCard';
+import barAPI from './app/api/barAPI';
 
-export default function App() {
+export default function App()
+  const [bottles, setBottles] =useState([]);
+  const [latestBottles, setLatestBottles] =useState([]);
+  const [categoryBottles, setCategoryBottles] =useState([]);
+  const [bestBottles, setBestBottles] =useState([]);
+
+  const filterMultipleBottles = async () => {
+    const bottles = await barAPI 
+  }
+
+  useEffect(() => {
+    filterMultipleBottles()
+  }, [])
 
   let bottles = data.sort((a,b) => a.purchaseDate < b.purchaseDate ? 1 : -1);
   let liqCategories = liquors.sort((a,b) => a > b ? 1 : -1); 
