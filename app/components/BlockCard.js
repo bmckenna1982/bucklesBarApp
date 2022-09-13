@@ -9,7 +9,7 @@ const BlockCard = ({style, imageStyle, item}) => {
       <View style={[styles.container, style]}>
         <Image source={{uri: thumbnail}} style={[styles.image, imageStyle]} resizeMode='contain'></Image>
         <View style={styles.contentContainer}>
-            <Title>{name}t</Title>
+            <Title>{name}</Title>
             <SubTitle>{desc}</SubTitle>
         </View>
       </View>

@@ -1,17 +1,22 @@
 export default [
     {
         id: "1",
-        name: "Test 1",
-        desc: "Description one",
+        name: "Eagle Rare",
+        desc: "Aged for a minimum of ten years, this Kentucky straight bourbon was named the Best Bourbon at the 2013 International Wine and Spirits Competition and won a Gold Medal at the World Whisky Masters in 2017.Eagle Rare Kentucky Straight Bourbon Whiskey is.",
         thumbnail: "http://cdn.shopify.com/s/files/1/0642/4857/8285/products/3b5d2ff79d3055e0e07f3ffab93466a2.png?v=1662180137",
-        category: "Standard",
+        category: "Bourbon",
         purchaseDate: "2020-05-15",
         purchaseLocation: "West Side Beverage",
-        openDate: "",
-        tastingNotes: "",
-        brand: "Standard 1",
+        bottledDate: "",
+        msrp: "$35 - $45",
+        paid: "",
+        tastingNotes: "The nose is complex, with aromas of toffee, hints of orange peel, herbs, honey, leather and oak. The taste is bold, dry and delicate with notes of candied almonds and very rich cocoa. The finish is dry and lingering.",
+        brand: "Eagle Rare",
         volume: "100",
-        rating: "7"
+        rating: "7",
+        distillery: "Buffalo Trace",
+        barcode: "",
+        age: "10"
     },
     {
         id: "2",
@@ -21,11 +26,15 @@ export default [
         category: "Kentucky",
         purchaseDate: "2021-06-13",
         purchaseLocation: "West Side Beverage",
-        openDate: "",
+        bottledDate: "",
+        msrp: "",
+        paid: "",
         tastingNotes: "",
         brand: "Kentucky 2",
         volume: "100",
-        rating: "8"
+        rating: "8",
+        distillery: "",
+        barcode: ""
     },
     {
         id: "3",
@@ -35,11 +44,15 @@ export default [
         category: "Tennessee",
         purchaseDate: "2022-05-05",
         purchaseLocation: "West Side Beverage",
-        openDate: "",
+        bottledDate: "",
+        msrp: "",
+        paid: "",
         tastingNotes: "",
         brand: "Tennessee 3",
         volume: "100",
-        rating: "6"
+        rating: "6",
+        distillery: "",
+        barcode: ""
     },
     {
         id: "4",
@@ -49,10 +62,32 @@ export default [
         category: "Straight",
         purchaseDate: "2022-06-20",
         purchaseLocation: "West Side Beverage",
-        openDate: "",
+        bottledDate: "",
+        msrp: "",
+        paid: "",
         tastingNotes: "",
         brand: "Straight 4",
         volume: "100",
-        rating: "6.5"
+        rating: "6.5",
+        distillery: "",
+        barcode: ""
+    },
+    {
+        id: "5",
+        name: "Vodka 5",
+        desc: "Description five",
+        thumbnail: "https://www.absolut.com/globalassets/images/products/absolut-vodka/atlas/ingredient_absolut-vodka_1000ml_us_packshot.jpg",
+        category: "Vodka",
+        purchaseDate: "2022-08-20",
+        purchaseLocation: "West Side Beverage",
+        bottledDate: "",
+        msrp: "",
+        paid: "",
+        tastingNotes: "",
+        brand: "Vodka 5",
+        volume: "100",
+        rating: "3.5",
+        distillery: "",
+        barcode: ""
     }
 ];
