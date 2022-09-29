@@ -1,6 +1,6 @@
 import { View, StyleSheet, Text } from 'react-native'
 import React from 'react'
-import Title from './Title'
+import Title from './common/Title'
 
 const Details = ({item}) => {    
   return (

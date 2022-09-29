@@ -1,5 +1,5 @@
 import axios from 'axios';
 
 export default axios.create({
-    baseURL: ''
+    baseURL: 'http://192.168.0.29:8000/api'
 });

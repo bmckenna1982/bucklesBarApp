@@ -1,6 +1,6 @@
 import { View, StyleSheet } from 'react-native'
 import React from 'react'
-import BlockCard from './BlockCard'
+import BlockCard from './cards/BlockCard'
 
 const BottlePreview = ({item}) => {
   return <BlockCard item={item} style={{ marginVertical: 15 }}/>  

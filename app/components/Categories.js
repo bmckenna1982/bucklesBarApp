@@ -1,6 +1,6 @@
 import { View, StyleSheet } from 'react-native'
 import React from 'react'
-import CategoriesList from './CategoriesList'
+import CategoriesList from './Lists/CategoriesList'
 
 
 const Categories = ({data}) => {

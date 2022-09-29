@@ -2,8 +2,8 @@ export default [
     {
         id: "1",
         name: "Eagle Rare",
-        desc: "Aged for a minimum of ten years, this Kentucky straight bourbon was named the Best Bourbon at the 2013 International Wine and Spirits Competition and won a Gold Medal at the World Whisky Masters in 2017.Eagle Rare Kentucky Straight Bourbon Whiskey is.",
-        thumbnail: "http://cdn.shopify.com/s/files/1/0642/4857/8285/products/3b5d2ff79d3055e0e07f3ffab93466a2.png?v=1662180137",
+        desc: "Aged for a minimum of ten years, this Kentucky straight bourbon was named the Best Bourbon at the 2013 International Wine and Spirits Competition and won a Gold Medal at the World Whisky Masters in 2017.Eagle Rare Kentucky Straight Bourbon Whiskey is.",        
+        thumbnail: "https://cdn11.bigcommerce.com/s-7a906/images/stencil/1280x1280/products/1279/8691/Eagle_Rare_10__14110.1433435060.jpg?c=2&imbypass=on",
         category: "Bourbon",
         purchaseDate: "2020-05-15",
         purchaseLocation: "West Side Beverage",

@@ -1,14 +1,13 @@
 import { View, StyleSheet, Image, Text, Dimensions } from 'react-native'
 import React from 'react'
-import Title from './Title'
-import Details from './Details';
-import SubTitle from './SubTitle';
+import Title from '../common/Title';
+import Details from '../Details';
+import SubTitle from '../common/SubTitle';
 
 const {height, width} = Dimensions.get('window')
 
 const BottleCard = ({item}) => {
     const { thumbnail, name, desc } = item;
-    console.log(item);
   return (
     <View style={styles.container}>
       <Title>{name}</Title>

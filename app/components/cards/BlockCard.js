@@ -1,7 +1,7 @@
 import { View, StyleSheet, Image } from 'react-native'
 import React from 'react'
-import Title from './Title'
-import SubTitle from './SubTitle'
+import Title from '../common/Title'
+import SubTitle from '../common/SubTitle'
 
 const BlockCard = ({style, imageStyle, item}) => {  
     const { thumbnail, name, desc } = item;

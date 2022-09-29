@@ -1,6 +1,6 @@
 import { View, StyleSheet } from 'react-native'
 import React from 'react'
-import HorizontalList from './HorizontalList'
+import HorizontalList from './common/HorizontalList'
 
 const LatestBottles = ({data}) => {
   return <HorizontalList title='Latest' data={data}/>
