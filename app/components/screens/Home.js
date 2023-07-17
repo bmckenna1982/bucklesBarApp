@@ -15,6 +15,7 @@ import AddBottleForm from './AddBottle';
 import AddBottle from './AddBottle';
 
 import useBottles from '../../hooks/useBottles';
+import { Title } from 'react-native-paper';
 
 const Home = () => {
     const [categorySelect, setCategorySelect] = useState(null);
@@ -45,6 +46,7 @@ const Home = () => {
 
     return (
         <Screen>
+          <Title>Inventory</Title>
           <SearchBar />
           <Categories data={categories} onPress={onPress}/>
           {categorySelect ? <BottlesList data={categorySelect.category}/> : ''}
