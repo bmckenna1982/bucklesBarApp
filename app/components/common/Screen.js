@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Screen({children}) {
   return (
-    <ScrollView style={styles.container}>
+    <ScrollView contentContainerStyle={styles.container} showsVerticalScrollIndicator={false}>
       {children}
     </ScrollView>
   )
@@ -12,8 +12,9 @@ export default function Screen({children}) {
 const styles = StyleSheet.create({
     container: {
         marginTop: StatusBar.currentHeight,
-        paddingHorizontal: 15,
-        backgroundColor: 'whitesmoke',
-        height: '100%'
+        paddingHorizontal: 5,
+        backgroundColor: 'whitesmoke',       
+        alignItems: 'center',
+        minHeight: '100%'
     }
 })

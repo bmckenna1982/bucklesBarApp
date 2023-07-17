@@ -7,7 +7,7 @@ const HorizontalList = ({title, data}) => {
   return (
     <>
         <Title size={20}>{title}</Title>
-        <FlatList data={data} keyExtractor={item => item.id} horizontal showsHorizontalScrollIndicator={false} renderItem={({item}) => <SmallCard item={item}/>}/>
+        <FlatList data={data} keyExtractor={item => item.bottle_id} horizontal showsHorizontalScrollIndicator={false} renderItem={({item}) => <SmallCard item={item}/>}/>
     </>
   )
 }

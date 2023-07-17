@@ -5,9 +5,10 @@ const {width} = Dimensions.get('window')
 
 const CategoryCard = ({item, onPress}) => {
   return (
-    <TouchableWithoutFeedback onPress={onPress}>
+    <TouchableWithoutFeedback onPress={() => onPress(item)}>
       <View style={styles.container}>
-        <Text style={styles.category}>{item}</Text>
+        {item.sub.length > 1 && <Text style={styles.category}>{item.sub}</Text>}
+        <Text style={styles.category}>{item.category}</Text>        
       </View>
 
     </TouchableWithoutFeedback>

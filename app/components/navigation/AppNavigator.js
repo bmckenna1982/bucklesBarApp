@@ -17,14 +17,14 @@ const Stack = createNativeStackNavigator();
 const Tab = createMaterialBottomTabNavigator();
 
 const AppNavigator = () => {
-  const {
-    bottles,
-    inventory,
-    latestBottles,
-    categoryBottles,
-    bestBottles,
-    categories
-   } = useBottles()
+  // const {
+  //   bottles,
+  //   inventory,
+  //   latestBottles,
+  //   categoryBottles,
+  //   bestBottles,
+  //   categories
+  //  } = useBottles()
 
   return (
     // <NavigationContainer>
@@ -60,7 +60,7 @@ const AppNavigator = () => {
     <Tab.Screen
       name="Inventory"
       component={BottlesList}
-      initialParams={{inventory: bottles}}
+      // initialParams={{inventory: bottles}}
       options={{
         tabBarLabel: 'Inventory',
         tabBarIcon: ({ color }) => (

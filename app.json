@@ -1,14 +1,16 @@
 {
   "expo": {
     "name": "BucklesBarApp",
-    "slug": "BucklesBarApp",
+    "slug": "mybar",
+    "owner": "bmckenna",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "scheme": "authRedirect",
     "splash": {
-      "image": "./assets/newSplash.png",
-      "resizeMode": "center",
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
       "backgroundColor": "#005A9C"
     },
     "updates": {

@@ -4,13 +4,13 @@ import Title from '../common/Title'
 import SubTitle from '../common/SubTitle'
 
 const BlockCard = ({style, imageStyle, item}) => {  
-    const { thumbnail, name, desc } = item;
+    const { thumbnail, brand, bottle_desc } = item;
     return (
       <View style={[styles.container, style]}>
         <Image source={{uri: thumbnail}} style={[styles.image, imageStyle]} resizeMode='contain'></Image>
         <View style={styles.contentContainer}>
-            <Title>{name}</Title>
-            <SubTitle>{desc}</SubTitle>
+            <Title>{brand}</Title>
+            <SubTitle>{bottle_desc}</SubTitle>
         </View>
       </View>
     )

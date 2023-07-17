@@ -5,12 +5,14 @@ import CategoryCard from '../cards/CategoryCard'
 
 import { useNavigation } from '@react-navigation/native'
 
-const CategoriesList = ({title, data}) => {
+const CategoriesList = ({title, data, onPress}) => {
   const navigation = useNavigation();
+  
+  data=[...data, {'category': 'All', 'id': 0, 'sub': ''}].sort((a,b) => a.category > b.category ? 1 : -1)
   return (
     <>
         <Title size={20}>{title}</Title>
-        <FlatList data={data} keyExtractor={(item, index) => {return index.toString()}} horizontal showsHorizontalScrollIndicator={false} renderItem={({item}) => <CategoryCard item={item}/>}/>
+        <FlatList data={data} keyExtractor={(item) => item.id} horizontal showsHorizontalScrollIndicator={false} renderItem={({item}) => <CategoryCard item={item} onPress={onPress}/>}/>
     </>
   )
 }

@@ -1,5 +1,5 @@
 import { View, StyleSheet } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 
 import SearchBar from '../common/SearchBar';
 import Screen from '../common/Screen';
@@ -17,6 +17,7 @@ import AddBottle from './AddBottle';
 import useBottles from '../../hooks/useBottles';
 
 const Home = () => {
+    const [categorySelect, setCategorySelect] = useState(null);
     const {
         bottles,
         inventory,
@@ -28,12 +29,25 @@ const Home = () => {
 //    let bottles = data.sort((a,b) => a.purchaseDate < b.purchaseDate ? 1 : -1);
 //    let liqCategories = route.params.categories.sort((a,b) => a > b ? 1 : -1); 
 //   latestBottles = bottles.slice(0, 3);
-//   console.log(bottles)
+   
+   console.log('inventory', inventory)
+   console.log('categorySelect', categorySelect)
+   
+   const filterByCategory = (inventory) => {
+    if (categorySelect) {
+      return [...inventory].filter(item => item.category === categorySelect)
+    }
+   }
+   
+   const onPress = (category) => {
+    setCategorySelect(category)    
+   }
 
     return (
         <Screen>
           <SearchBar />
-          <Categories data={categories}/>
+          <Categories data={categories} onPress={onPress}/>
+          {categorySelect ? <BottlesList data={categorySelect.category}/> : ''}
           {/* <AddBottle /> */}
           {/* <BottlesList data={data}/> */}
           {/* <BottlePreview item={latestBottles[0]}/> */}
